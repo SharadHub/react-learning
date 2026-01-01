@@ -1,3 +1,5 @@
+import React from "react";
+
 export const Card = () => {
     return (
         <div id="card">
@@ -7,3 +9,19 @@ export const Card = () => {
         </div>
     );
 };
+
+export const CardWithoutJSX = () => {
+    return React.createElement(
+        "div",
+        {id:"Card"},
+        React.createElement("h2", null, "Welcome"),
+        React.createElement(
+            "p",
+            null,
+            "This is a",
+            React.createElement("span", {id:"highlight"}, "paragraph"),
+            "with text",
+        ),
+        React.createElement("button", null, "Click me")
+    )
+}
