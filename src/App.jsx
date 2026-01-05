@@ -1,28 +1,51 @@
-import {Welcome} from "./Welcome"
-import {Button} from "./Button"
-import { Hello , HelloWithoutJSX } from "./Hello"
-import { UserProfile } from "./UserProfile"
-import { ContactForm } from "./ContactForm"
-import { StyleForm } from "./StyleForm"
-import { CandidateProfile } from "./CandidateProfile"
-import './App.css'
+// import { Welcome } from "./components/demo//Welcome";
+// import { Button } from "./components/layout/Button";
+// import { Hello, HelloWithoutJSX } from "./components/demo/Hello";
+// import { UserProfile } from "./components/demo/UserProfile";
+// import { ContactForm } from "./components/demo/ContactForm";
+// import { StyleForm } from "./components/demo/StyleForm";
+// import { CandidateProfile } from "./components/demo/CandidateProfile";
+// import { Product } from "./components/demo/Product";
+import { Greeting } from "./props/Greeting";
+import { CardWrapper } from "./props/CardWrapper";
+import "./App.css";
 
 function App() {
-
   return (
     <div>
-      <CandidateProfile/>
-      <StyleForm/>
-      <UserProfile/>
-      <ContactForm/>
+       {/* <Product
+        title="gaming laptop"
+        price={300}
+        inStock={true}
+        categories={["Electronics", "Computers", "Gaming"]}
+      /> */}
+      {/*
+      <UserProfile />
       <Hello />
       <HelloWithoutJSX />
+      <CandidateProfile />
+      <StyleForm />
+      <ContactForm />
       <h1>I am a Frontend Developer</h1>
-      <Welcome />
-      <Button />
-      
+      <Button /> */}
+
+      {/* <Welcome name="Bishal" alias="batman" />
+      <Welcome name="Sharad" alias="superman" />
+      <Welcome name="Asmita" alias="wonder woman" /> */}
+
+
+      <Greeting name="Bishal" message="Hello"/>
+      <Greeting name="Sharad"/>
+      <Greeting message="Kaho Na Pyaar Hain"/>
+      <Greeting/>
+
+      <CardWrapper>
+        <p>Bishal Bista</p>
+        <p>IronMan</p>
+        <button>ironman10@gmail.com</button>
+      </CardWrapper>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

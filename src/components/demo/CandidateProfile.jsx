@@ -1,11 +1,4 @@
 export const CandidateProfile = () => {
-    // const Info = [
-    //     {
-    //         name: "Tony Stark",
-    //         role: "Physicist",
-    //         experience: 13,
-    //     }
-    // ]
 
     const name = "Tony Stark";
     const role = "Physicist";
